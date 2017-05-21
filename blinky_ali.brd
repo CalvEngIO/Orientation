@@ -149,7 +149,8 @@
 <text x="17.1958" y="28.9306" size="1.778" layer="25">OFF</text>
 <text x="23.8252" y="28.9306" size="1.778" layer="25">ON</text>
 <text x="19.6596" y="6.0706" size="1.27" layer="25" font="vector">BLINKY</text>
-<text x="9.0424" y="21.9964" size="0.8128" layer="25" rot="R90">ALI ABUSALEH</text>
+<text x="29.0068" y="27.1526" size="1.016" layer="25" rot="R90">ALI ABUSALEH</text>
+<hole x="28.3464" y="6.0452" drill="1.2"/>
 </plain>
 <libraries>
 <library name="CalvEngIO-Passives">
