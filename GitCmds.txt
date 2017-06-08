@@ -1,21 +1,46 @@
-git branch - tells you what branch you're on
+YOU SHOULD REGULARLY USE git pull TO UPDATE YOUR DIRECTORY FROM THE REMOTE DIRECTORY
+
+
+THIS AVOIDS LONG COMMIT AND PULL MESSAGES
+esc :wq
+
+
+MAKING BRANCHES
+git branch - tells what branch you're one
 git branch <newbranchname> - makes a new branch
-git checkout <branchname> - switches branch to <branchname>
+git checkout <branchname> - swiches branches to new branch name
 
 
+UPDATE BRANCH FROM MASTER
 http://stackoverflow.com/questions/3876977/update-git-branches-from-master
 update branch from master
 git fetch
 git rebase origin/master
 
 
+MERGE BRANCH WITH MASTER
 http://stackoverflow.com/questions/5601931/best-and-safest-way-to-merge-a-git-branch-into-master
 update master from branch
+git checkout <branchname>
+git status
+
+<<THIS IS JUST A NOTE>>
+<<do this only if there are files you need to add after doing "git status">>
+git add (add whatever files your want to merge with your master)
+git commit -m "place commit message here")
+git push
+<<THIS WAS JUST A NOTE>>
+
 git checkout master
 git pull origin master
 git merge test
 git push origin master
 
 
-this avoids long commit and pull messages
-esc :wq
+DELETING A BRANCH
+LOCALLY (on your computer)
+git checkout master
+git branch -d <branch_name>
+
+REMOTELY (on the repository) -- you should probably only do this to branches you own by the way
+git push origin --delete <branchname>
