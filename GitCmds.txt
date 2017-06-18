@@ -5,6 +5,9 @@ THIS AVOIDS LONG COMMIT AND PULL MESSAGES
 esc :wq
 
 
+git add <filename>
+
+
 MAKING BRANCHES
 git branch - tells what branch you're one
 git branch <newbranchname> - makes a new branch
