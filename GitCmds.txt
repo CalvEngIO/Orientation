@@ -4,6 +4,12 @@ YOU SHOULD REGULARLY USE git pull TO UPDATE YOUR DIRECTORY FROM THE REMOTE DIREC
 THIS AVOIDS LONG COMMIT AND PULL MESSAGES
 esc :wq
 
+REMOVE FILE
+git rm <filename>
+
+ADD FILE
+git add <filename>
+
 
 MAKING BRANCHES
 git branch - tells what branch you're one
@@ -44,3 +50,11 @@ git branch -d <branch_name>
 
 REMOTELY (on the repository) -- you should probably only do this to branches you own by the way
 git push origin --delete <branchname>
+
+
+Updating forks from origianl repositories
+https://youtu.be/TsUIRtT80QU
+https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository
+https://help.github.com/articles/fork-a-repo/
+https://yangsu.github.io/pull-request-tutorial/
+
