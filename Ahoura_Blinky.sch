@@ -1211,15 +1211,14 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <part name="U$1" library="CalvEngIO-Switches" deviceset="SWITCH.JS202011JCQN" device=""/>
 <part name="R1" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402"/>
 <part name="R2" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402"/>
-<part name="R3" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402"/>
+<part name="R3" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402" value="10k"/>
 <part name="R4" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402"/>
 <part name="R5" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402"/>
 <part name="R6" library="CalvEngIO-Passives" deviceset="RESISTOR" device="0402"/>
 <part name="C1" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
-<part name="C2" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="C2" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="OP1" library="CalvEngIO-AnalogIC" deviceset="OP-DUAL" device="RM"/>
 <part name="LED1" library="CalvEngIO-LED" deviceset="LED" device="0603"/>
-<part name="SUPPLY1" library="CalvEngIO-Symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY2" library="CalvEngIO-Symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY4" library="CalvEngIO-Symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY6" library="CalvEngIO-Symbols" deviceset="3.3V" device=""/>
@@ -1227,7 +1226,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <part name="GND2" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="GND3" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 <part name="GND4" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
-<part name="C3" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402"/>
+<part name="C3" library="CalvEngIO-Passives" deviceset="CAPACITOR" device="0402" value="100n"/>
 <part name="GND5" library="CalvEngIO-Symbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -1249,7 +1248,6 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <instance part="OP1" gate="A" x="68.58" y="35.56"/>
 <instance part="OP1" gate="B" x="101.6" y="66.04"/>
 <instance part="LED1" gate="G$1" x="129.54" y="55.88"/>
-<instance part="SUPPLY1" gate="G$1" x="73.66" y="40.64"/>
 <instance part="SUPPLY2" gate="G$1" x="30.48" y="60.96"/>
 <instance part="SUPPLY4" gate="G$1" x="53.34" y="55.88"/>
 <instance part="SUPPLY6" gate="G$1" x="-10.16" y="63.5"/>
@@ -1373,28 +1371,27 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <wire x1="91.44" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="55.88" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="OP1" gate="B" pin="OUT"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="66.04" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="78.74" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="OP1" gate="B" pin="OUT"/>
+<wire x1="111.76" y1="66.04" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="55.88" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
+<junction x="111.76" y="66.04"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="66.04" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
