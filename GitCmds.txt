@@ -7,8 +7,14 @@ DO NOT NAME FILES WITH SPACES IN THEM. USE UNDERSCORES INNSTEAD OF SPACES.
 THIS AVOIDS LONG COMMIT AND PULL MESSAGES
 esc :wq
 
-REMOVE FILE
-git rm <filename>
+REMOVE/DELETE FILE
+git rm <filename> <filename2> <etc>
+
+REMOVE/DELETE a folder
+git rm -r folder-name
+//update to remote repository
+git commit -m "Remove duplicated directory"
+git push origin master
 
 ADD FILE
 git add <filename>
@@ -65,3 +71,14 @@ https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repo
 https://help.github.com/articles/fork-a-repo/
 https://yangsu.github.io/pull-request-tutorial/
 
+
+Github and Markdown
+https://guides.github.com/features/mastering-markdown/
+https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+
+Working with tags in GitHub
+https://help.github.com/articles/working-with-tags/
+https://git-scm.com/book/en/v2/Git-Basics-Tagging
+https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository
