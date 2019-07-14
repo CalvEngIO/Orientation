@@ -86,3 +86,11 @@ Working with tags in GitHub
 https://help.github.com/articles/working-with-tags/
 https://git-scm.com/book/en/v2/Git-Basics-Tagging
 https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository
+
+//to make a tag
+git tag -a v1.0.0 -m "message here"
+//to check tags
+git tag
+//to push tags to online repo
+git push --tags
+
