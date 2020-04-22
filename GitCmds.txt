@@ -108,7 +108,18 @@ git push --tags
 
 Working with vim
 https://askubuntu.com/questions/261900/how-do-i-open-a-text-file-in-my-terminal
+create a file using command line
+vim <filename>
 
 
 Open files in terminal
 https://apple.stackexchange.com/questions/212583/how-to-open-files-via-terminal
+
+
+open a file using command line
+open <filename>
+
+
+delete a file using command line
+rm <filename>
+
