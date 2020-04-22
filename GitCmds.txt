@@ -31,6 +31,7 @@ git checkout
 IN CASE YOU MADE CHANGES THAT YOU WANT TO GET RID OF SO YOU CAN DO A CLEAN GIT PULL
 git stash allows you to reset your changes so you can git pull without
 any conflict. Then you can git stash clear to memove your list of stashes
+https://git-scm.com/docs/git-stash
 
 
 MAKING BRANCHES
