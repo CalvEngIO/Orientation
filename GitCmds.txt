@@ -24,6 +24,15 @@ ADD FILE
 git add <filename>
 
 
+RESETTING YOUR CHANGES BACK TO THE MASTER
+git checkout
+
+
+IN CASE YOU MADE CHANGES THAT YOU WANT TO GET RID OF SO YOU CAN DO A CLEAN GIT PULL
+git stash allows you to reset your changes so you can git pull without
+any conflict. Then you can git stash clear to memove your list of stashes
+
+
 MAKING BRANCHES
 git branch - tells what branch you're one
 git branch <newbranchname> - makes a new branch
@@ -94,3 +103,11 @@ git tag
 //to push tags to online repo
 git push --tags
 
+
+
+Working with vim
+https://askubuntu.com/questions/261900/how-do-i-open-a-text-file-in-my-terminal
+
+
+Open files in terminal
+https://apple.stackexchange.com/questions/212583/how-to-open-files-via-terminal
