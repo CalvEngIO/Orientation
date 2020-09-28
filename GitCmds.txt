@@ -45,6 +45,12 @@ http://stackoverflow.com/questions/3876977/update-git-branches-from-master
 update branch from master
 git fetch
 git rebase origin/master
+git push
+
+
+DELETING A TAG
+git tag --delete tagname
+git push
 
 
 KEEPING A FORKED REPOSITORY UP TO DATE WITH THE MASTER
