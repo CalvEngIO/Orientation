@@ -14,6 +14,11 @@ esc :wq
 REMOVE/DELETE FILE
 git rm <filename> <filename2> <etc>
 
+
+DELETE ALL FILES SHOWN BY git status
+git add -u
+
+
 REMOVE/DELETE a folder
 git rm -r folder-name
 //update to remote repository
